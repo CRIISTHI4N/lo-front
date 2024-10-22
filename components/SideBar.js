@@ -86,21 +86,21 @@ export const SideBar = () => {
                         <span className={`${navBar ? 'hidden' : 'block'}`}>Entrada / Salida</span>
                     </Link>
 
-                    {
-                        datosUsuario.tipo === 'admin' &&
-                        <Link
-                            href="/libroobra"
-                            className={`flex gap-2 text-[12px] items-center mt-1 border-l-[2px] transition-colors hover:border-l-black hover:text-black ${pathname === "/libroobra" ? 'border-l-black text-black' : 'text-gray-600 border-l-white'}`}
-                        >
-                            <div className="relative group p-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                                </svg>
-                                <span className={`${navBar ? 'hidden group-hover:absolute group-hover:block group-hover:left-10 group-hover:top-1 group-hover:px-6 group-hover:py-1 z-10 bg-black group-hover:text-white group-hover:rounded-md' : 'hidden'} whitespace-nowrap`}>Libro Obra</span>
-                            </div>
-                            <span className={`${navBar ? 'hidden' : 'block'}`}>Libro Obra</span>
-                        </Link>
-                    }
+                    {/* {
+                        datosUsuario.tipo === 'admin' && */}
+                    <Link
+                        href="/libroobra"
+                        className={`flex gap-2 text-[12px] items-center mt-1 border-l-[2px] transition-colors hover:border-l-black hover:text-black ${pathname === "/libroobra" ? 'border-l-black text-black' : 'text-gray-600 border-l-white'}`}
+                    >
+                        <div className="relative group p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                            </svg>
+                            <span className={`${navBar ? 'hidden group-hover:absolute group-hover:block group-hover:left-10 group-hover:top-1 group-hover:px-6 group-hover:py-1 z-10 bg-black group-hover:text-white group-hover:rounded-md' : 'hidden'} whitespace-nowrap`}>Libro Obra</span>
+                        </div>
+                        <span className={`${navBar ? 'hidden' : 'block'}`}>Libro Obra</span>
+                    </Link>
+                    {/* } */}
 
                     <Link
                         href="/reporteria"
